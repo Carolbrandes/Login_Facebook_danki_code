@@ -39,7 +39,7 @@ label{
 .logo-e-acesso-container{
         background-color: #3b5998;
         color: #fff;
-        padding: 1%;
+        padding: 1% 2%;
         width: 100%;
 }
 
@@ -56,8 +56,7 @@ label{
 }
 
 .logo-e-acesso-container form {
-        display: flex;
-        
+        display: flex;       
 }
 
 .logo-e-acesso-container form > div {
@@ -167,7 +166,7 @@ main{
         background-image: linear-gradient(#76b45d, #588944);
         color: #fff;
         font-size: 24px;
-        width: 200px;
+        width: fit-content;
         height: 40px;
         padding: 2px 5%;
         border-radius: 4px;
@@ -178,6 +177,7 @@ footer{
         background-color: #3b5998;
         padding: 1%;
         width: 100%;
+        text-align: center;
 }
 
 footer a {
@@ -189,6 +189,93 @@ footer a {
 .selected{
         color: #6793f1;
 }
+
+
+@media screen and (max-width: 1200px){
+
+        .logo-e-acesso-container h1{
+                margin-bottom: 15px;
+        }
+
+        .logo-e-acesso-container{
+                padding: 5%;
+        }
+
+        .logo-e-acesso-flex{
+                flex-direction: column;
+                align-items: center;
+        }
+
+        .logo-e-acesso-container form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;       
+        }
+
+        .logo-e-acesso-container form  input{
+                width: 80vw;
+        }
+
+        .logo-e-acesso-container form > div {
+                margin: 5px 0;
+        }
+
+        .botao-entrar{
+                width: 150px;
+        }
+
+        .main-flex{
+                flex-direction: column;
+                align-items: center;
+        }
+
+        .main-col{
+                width: 90%;
+                margin-bottom: 50px;
+        }
+        
+        .main-col p{
+                width: 90%;
+                text-align: center;
+        }
+
+        .main-col img{
+               display: none;
+        }
+
+        .form-cadastro{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        }
+
+        .form-cadastro h1{
+                text-align: center;
+        }
+
+        .form-cadastro input[type="text"],  .form-cadastro input[type="password"]{
+                width: 80vw;
+        }
+
+        .col-2{
+                display: flex;
+                flex-direction: column;
+        }
+
+        .col-2 > input:first-of-type{
+                margin: 5px 0;
+        }
+
+        .form-cadastro label{
+                margin-top: 10px;
+                text-align: center;
+        }
+
+}
+
+
+
+
 
 
 
